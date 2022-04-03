@@ -1,0 +1,392 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.header{
+    background-color: #dfe0db;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+}
+.navBar{
+    display: flex;
+    align-items: center;
+    padding: 20px 80px;
+}
+.nav{
+    flex: 1;
+    text-align: right;
+}
+.nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+.nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+.nav a{
+    font-family: 'BIZ UDMincho', serif;
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+.bigImage{
+    text-align: center;
+}
+.btnCart:hover{
+    cursor: pointer;
+}
+.btnMenu{
+    margin-left: 15px;
+    display: none;
+}
+.smallContainer{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col{
+    float: left;
+    width: 25%;
+    padding: 10px;
+    margin: 25px 0px;
+    transition: transform 0.5s;
+}
+.col::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.col img{
+    width: 100%;
+}
+.col:hover{
+    transform: translateY(-5px);
+}
+.title{
+    font-family: 'BIZ UDMincho', serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 50 auto 40px;
+    position: relative;
+    line-height: 60px;
+}
+.title::after{
+    content: "";
+    background-color:darkslategray;
+    width: 70px;
+    height: 4px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h1{
+    font-family: 'BIZ UDMincho', serif;
+}
+h4{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.twoColumn{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.twoColumn img{
+    max-width: 100%;
+    padding: 50px;
+}
+.offer{
+    margin-top: 50px;
+    background-color:bisque;
+}
+.offer p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+.offer h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+small{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    font-style: italic;
+}
+.offerBtn{
+    display: inline-block;
+    background-color: #ff6600;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+.footer{
+    background-color: black;
+    color: #8a8a8a;
+    padding: 60px 0px 20px;
+}
+.footerCol{
+    flex-basis: 25%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.footer h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color: white;
+    margin-bottom: 10px;
+}
+.footer ul{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style-type: none;
+}
+.brands{
+    margin: 100px auto;
+}
+.brands .col{
+    width: 160px;
+}
+.brands .col img{
+    width: 100%;
+    cursor: pointer;
+}
+
+@media (max-width: 900px){
+    .nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    .nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .nav ul li a{
+        color: white;
+    }
+    .btnMenu{
+        display: block;
+        cursor: pointer;
+    }
+}
+@media (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col{
+        flex-basis: 100%;
+    }
+}
+
+.rowProducts{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: 2px solid grey;
+    padding: 5px;
+}
+select:focus{
+    outline: none;
+}
+
+.colSingle{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.colSingle img{
+    max-width: 100%;
+    padding: 50px 0px;
+}
+.singleProduct h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0px;
+}
+.singleProduct h4{
+    margin: 20px 0px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.singleProduct{
+    margin-top: 80px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background-color:ghostwhite;
+}
+.singleProduct .colSingle img{
+    padding: 0px;
+}
+.singleProduct .colSingle{
+    padding: 20px;
+}
+.singleProduct select{
+    display: block;
+    padding: 10px;
+    margin-top: 15px;
+}
+.singleProduct input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+input:focus{
+    outline: none;
+}
+
+#cart{
+    margin: 100px auto;
+    display: none;
+}
+.cartContent{
+    display: flex;
+    min-height: 230px;
+    background-color: cornsilk;
+}
+.products{
+    flex: 0.75;
+}
+.product{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.product > img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+.productInfo{
+    padding: 20px;
+    width: 100%;
+}
+.cartProductTitle, .cartProductPrice, .price{
+    margin-bottom: 20px;
+}
+.cartProductRemove{
+    height: 40px;
+    padding: 10px 25px;
+    background-color: #ff6600;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.cartProductRemove:hover{
+    background-color: white;
+    color: #ff6600;
+    font-weight: 600px;
+    border: 1px solid #ff6600;
+}
+.cartProductQuantity{
+    width: 40px;
+    padding: 5px;
+    text-align: center;
+}
+.cartTotal{
+    flex: 0.25;
+    margin-left: 20px;
+    padding: 20px;
+    height: 240px;
+    border: 1px solid silver;
+    border-radius: 3px;
+}
+.cartTotal p{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.cartTotal a{
+    display: block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background-color:#ff6600;
+    color: white;
+    text-decoration: none;
+    margin-top: 30px;
+}
+#allProducts{
+    display: none;
+}
+#productSection{
+    display: none;
+}
+.addBtn{
+    display: inline-block;
+    background-color: #ff6600;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0px;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup{
+    display: none;
+}
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vw;
+    background-color: rgba(0,0,0,0.7);
+}
+.popup .closePopup{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    font-weight: 600px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.popupContent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: silver;
+    width: 450px;
+    height: 150px;
+    z-index: 2;
+    padding: 20px;
+}
+
+.form{
+    width: 350px;
+}
+.textArea{
+    margin-bottom: 20px;
+}

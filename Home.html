@@ -1,0 +1,358 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Shopping</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div class="header" id="header">
+        <div class="container">
+            <div class="navBar">
+                <div class="logo">
+                    <img src="test.png" alt="" style="width: 50px;">
+                </div>
+                <h1 style="padding-left: 30px;">Happy Shopping</h1>
+                <div class="nav">
+                    <ul id="menuItems">
+                        <li><a onclick="homePageOpen()" style="cursor: pointer;">Home</a></li>
+                        <li><a onclick="productsPageOpen()" style="cursor: pointer;">Products</a></li>
+                        <li><a onclick="addNewProduct()" style="cursor: pointer;">New Product</a></li>
+                    </ul>
+                </div>
+                <img class="btnCart" id="btnCart" src="cart.png" width="25px" height="25px" style="margin-top: 12px;" onclick="cartt()">
+                <img class="btnMenu" src="menu.png" width="25px" height="25px" style="margin-top: 12px;" onclick="menu()">
+            </div>
+            <div class="bigImage" id="bigImage">
+                <img src="1.jpg" alt="" style="max-height: 500px">
+            </div>
+        </div>
+    </div>
+
+    <div id="allContent">
+        <div class="smallContainer">
+            <h2 class="title">Popular Products</h2>
+            <div class="row">
+                <div class="col">
+                    <a><img src="https://w7.pngwing.com/pngs/407/814/png-transparent-blazer-suit-jacket-lapel-tuxedo-suit-fashion-navy-blue-black.png" onclick="setProductProperties('image13', 'title13', 'price13')" class="image13"></a>
+                    <h4 id="title13">Tweed jacket with diagonal closure</h4>
+                    <p id="price13">$675.00</p>
+                </div>
+                <div class="col">
+                    <a><img style="height: 280px; padding-top: 20px;" src="https://w7.pngwing.com/pngs/129/664/png-transparent-jacket-blazer-frock-coat-zipper-woman-blazer-zipper-woman-blazer-uniform.png" onclick="setProductProperties('image6', 'title6', 'price6')" class="image6"></a>
+                    <h4 id="title6">Single-breasted jacket in denim-effect mouliné wool seersucker</h4>
+                    <p id="price6">$975.00</p>
+                </div>
+                <div class="col">
+                    <a><img style="height: 240px;" src="https://w7.pngwing.com/pngs/178/495/png-transparent-blazer-coat-suit-jacket-blouson-suit-jacket-zipper-fashion-men-suit.png" onclick="setProductProperties('image16', 'title16', 'price16')" class="image16"></a>
+                    <h4 id="title16">Faux-galuchat fabric jacket with martingale</h4>
+                    <p id="price16">$875.00</p>
+                </div>
+                <div class="col">
+                    <a><img src="https://w7.pngwing.com/pngs/559/670/png-transparent-suit-jacket-coat-clothing-blazer-jacket-fashion-formal-wear-red.png" onclick="setProductProperties('image1', 'title1', 'price1')" class="image1"></a>
+                    <h4 id="title1">Worsted virgin wool jacket with satin lapels</h4>
+                    <p id="price1">$1095.00</p>
+                </div>
+            </div>
+    
+            <h2 class="title">Latest Products</h2>
+            <div class="row">
+                <div class="col">
+                    <a><img src="https://w7.pngwing.com/pngs/559/670/png-transparent-suit-jacket-coat-clothing-blazer-jacket-fashion-formal-wear-red.png" onclick="setProductProperties('image1', 'title1', 'price1')" class="image1"></a>
+                    <h4 id="title1">Worsted virgin wool jacket with satin lapels</h4>
+                    <p id="price1">$1095.00</p>
+                </div>
+                <div class="col">
+                    <a><img src="https://w7.pngwing.com/pngs/740/510/png-transparent-blazer-suit-sleeve-formal-wear-sport-coat-blazer-blue-navy-blue-formal-wear.png" onclick="setProductProperties('image2', 'title2', 'price2')" class="image2"></a>
+                    <h4 id="title2">Jacket with guru collar in stretch wool with 3D effect</h4>
+                    <p id="price2">$825.00</p>
+                </div>
+                <div class="col">
+                    <a><img src="https://w7.pngwing.com/pngs/695/293/png-transparent-blazer-clothing-coat-jacket-men-s-jacket-white-men-suit-clothes-hanger.png" onclick="setProductProperties('image3', 'title3', 'price3')" class="image3"></a>
+                    <h4 id="title3">Worsted virgin wool jacket with satin shawl lapels</h4>
+                    <p id="price3">$1095.00</p>
+                </div>
+                <div class="col">
+                    <a><img style="height: 240px;" src="https://w7.pngwing.com/pngs/858/517/png-transparent-blazer-suit-jacket-sport-coat-suit-white-woman-formal-wear.png" onclick="setProductProperties('image4', 'title4', 'price4')" class="image4"></a>
+                    <h4 id="title4">Woven linen gauze jacket with guru collar</h4>
+                    <p id="price4">$775.00</p>
+                </div>
+                <div class="col">
+                    <a><img style="height: 260px;" src="https://w7.pngwing.com/pngs/261/866/png-transparent-blazer-armani-designer-overcoat-jacket-houndstooth-jacket-formal-wear-life-jacket-sleeve.png" onclick="setProductProperties('image5', 'title5', 'price5')" class="image5"></a>
+                    <h4 id="title5">Chevron-motif knitted jacket</h4>
+                    <p id="price5">$775.00</p>
+                </div>
+                <div class="col">
+                    <a><img style="height: 280px; padding-top: 20px;" src="https://w7.pngwing.com/pngs/129/664/png-transparent-jacket-blazer-frock-coat-zipper-woman-blazer-zipper-woman-blazer-uniform.png" onclick="setProductProperties('image6', 'title6', 'price6')" class="image6"></a>
+                    <h4 id="title6">Single-breasted jacket in denim-effect mouliné wool seersucker</h4>
+                    <p id="price6">$975.00</p>
+                </div>
+                <div class="col">
+                    <a><img style="height: 260px;" src="https://w7.pngwing.com/pngs/220/205/png-transparent-blazer-jacket-suit-tuxedo-formal-wear-blazer-black-formal-wear-tuxedo.png" onclick="setProductProperties('image7', 'title7', 'price7')" class="image7"></a>
+                    <h4 id="title7">Faded linen, single-breasted jacket</h4>
+                    <p id="price7">$875.00</p>
+                </div>
+                <div class="col">
+                    <a><img style="height: 280px; padding-top: 20px;" src="https://w7.pngwing.com/pngs/36/811/png-transparent-blazer-jacket-suit-shirt-clothing-blazer-formal-wear-blazer-sport-coat.png" onclick="setProductProperties('image8', 'title8', 'price8')" class="image8"></a>
+                    <h4 id="title8">Emporio Armani for C.P. Company DyShell Blazer</h4>
+                    <p id="price8">$727.00</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="offer">
+            <div class="smallContainer">
+                <div class="row" style="margin-top: 20px;">
+                    <div class="twoColumn">
+                        <img src="https://w7.pngwing.com/pngs/905/127/png-transparent-blazer-jacket-sleeve-coat-clothing-jacket-zipper-fashion-woman.png" class="image11">
+                    </div>
+                    <div class="twoColumn">
+                        <h1 id="title11" style="padding-bottom: 10px;">Linen-and-silk blend craquelure jacket with faux toggles</h1>
+                        <h1 style="font-size: 50px;"><del>$975.00</del><br>$780.00</h1>
+                        <p style="padding-bottom: 10px;">Amazing deals on timed discounts</p>
+                        <p id="price11" style="display: none;">$780.00</p>
+                        <small>Blazer jackets are offered for sale with a 20% discount in our spring special campaign. These special offers will continue until May 20. Add these rare products to your shopping basket so you don't miss the discounts. <br></small>
+                        <a style="cursor: pointer;" class="offerBtn" onclick="setProductProperties('image11', 'title11', 'price11')">Buy now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="brands">
+            <div class="smallContainer">
+                <div class="row">
+                    <div class="col">
+                        <a href="https://www.zara.com/tr/" target="_blank"><img src="https://w7.pngwing.com/pngs/39/910/png-transparent-zara-fashion-clothes-clothing-brands-and-logos-icon.png"></a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.armani.com/en-tr" target="_blank"><img src="https://w7.pngwing.com/pngs/922/827/png-transparent-armani-junior-italian-fashion-armani-jeans-luxury-brand-miscellaneous-text-trademark.png"></a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.chanel.com/us/" target="_blank"><img src="https://w7.pngwing.com/pngs/571/691/png-transparent-chanel-logo-brand-fashion-coco-company-text-trademark.png"></a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.gucci.com/tr/en_gb/" target="_blank"><img src="https://w7.pngwing.com/pngs/545/780/png-transparent-gucci-chanel-logo-brand-fashion-design-others-text-trademark-logo.png"></a>
+                    </div>
+                    <div class="col">
+                        <a href="https://tr.uspoloassn.com" target="_blank"><img src="https://w7.pngwing.com/pngs/959/551/png-transparent-ralph-lauren-polo-logo-ralph-lauren-corporation-polo-shirt-logo-fashion-brand-polo-text-fashion-ralph-lauren.png"></a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.brandys.com.tr/versace-jeans/" target="_blank"><img src="https://w7.pngwing.com/pngs/701/67/png-transparent-versace-logo-illustration-donatella-versace-brand-fashion-design-versace-logo-white-text-fashion.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="smallContainer" id="allProducts">
+        <div class="row rowProducts">
+            <h2>All Products</h2>
+            <select>
+                <option>Default Sorting</option>
+                <option>Sort by price</option>
+                <option>Sort by popularity</option>
+            </select>
+        </div>
+        <div class="row newProduct" style="cursor: pointer;">
+            <div class="col">
+                <a><img src="https://w7.pngwing.com/pngs/559/670/png-transparent-suit-jacket-coat-clothing-blazer-jacket-fashion-formal-wear-red.png" onclick="setProductProperties('image1', 'title1', 'price1')" class="image1"></a>
+                <h4 id="title1">Worsted virgin wool jacket with satin lapels</h4>
+                <p id="price1">$1095.00</p>
+            </div>
+            <div class="col">
+                <a><img src="https://w7.pngwing.com/pngs/740/510/png-transparent-blazer-suit-sleeve-formal-wear-sport-coat-blazer-blue-navy-blue-formal-wear.png" onclick="setProductProperties('image2', 'title2', 'price2')" class="image2"></a>
+                <h4 id="title2">Jacket with guru collar in stretch wool with 3D effect</h4>
+                <p id="price2">$825.00</p>
+            </div>
+            <div class="col">
+                <a><img src="https://w7.pngwing.com/pngs/695/293/png-transparent-blazer-clothing-coat-jacket-men-s-jacket-white-men-suit-clothes-hanger.png" onclick="setProductProperties('image3', 'title3', 'price3')" class="image3"></a>
+                <h4 id="title3">Worsted virgin wool jacket with satin shawl lapels</h4>
+                <p id="price3">$1095.00</p>
+            </div>
+            <div class="col">
+                <a><img style="height: 240px;" src="https://w7.pngwing.com/pngs/858/517/png-transparent-blazer-suit-jacket-sport-coat-suit-white-woman-formal-wear.png" onclick="setProductProperties('image4', 'title4', 'price4')" class="image4"></a>
+                <h4 id="title4">Woven linen gauze jacket with guru collar</h4>
+                <p id="price4">$775.00</p>
+            </div>
+            <div class="col">
+                <a><img style="height: 260px;" src="https://w7.pngwing.com/pngs/261/866/png-transparent-blazer-armani-designer-overcoat-jacket-houndstooth-jacket-formal-wear-life-jacket-sleeve.png" onclick="setProductProperties('image5', 'title5', 'price5')" class="image5"></a>
+                <h4 id="title5">Chevron-motif knitted jacket</h4>
+                <p id="price5">$775.00</p>
+            </div>
+            <div class="col">
+                <a><img style="height: 280px; padding-top: 20px;" src="https://w7.pngwing.com/pngs/129/664/png-transparent-jacket-blazer-frock-coat-zipper-woman-blazer-zipper-woman-blazer-uniform.png" onclick="setProductProperties('image6', 'title6', 'price6')" class="image6"></a>
+                <h4 id="title6">Single-breasted jacket in denim-effect mouliné wool seersucker</h4>
+                <p id="price6">$975.00</p>
+            </div>
+            <div class="col">
+                <a><img style="height: 260px;" src="https://w7.pngwing.com/pngs/220/205/png-transparent-blazer-jacket-suit-tuxedo-formal-wear-blazer-black-formal-wear-tuxedo.png" onclick="setProductProperties('image7', 'title7', 'price7')" class="image7"></a>
+                <h4 id="title7">Faded linen, single-breasted jacket</h4>
+                <p id="price7">$875.00</p>
+            </div>
+            <div class="col">
+                <a><img style="height: 280px; padding-top: 20px;" src="https://w7.pngwing.com/pngs/36/811/png-transparent-blazer-jacket-suit-shirt-clothing-blazer-formal-wear-blazer-sport-coat.png" onclick="setProductProperties('image8', 'title8', 'price8')" class="image8"></a>
+                <h4 id="title8">Emporio Armani for C.P. Company DyShell Blazer</h4>
+                <p id="price8">$727.00</p>
+            </div>
+            <div class="col">
+                <a><img src="https://w7.pngwing.com/pngs/539/890/png-transparent-blazer-jacket-clothing-dress-shirt-coat-oscar-fashion-formal-wear-blazer.png" onclick="setProductProperties('image9', 'title9', 'price9')" class="image9"></a>
+                <h4 id="title9">Lapel blazer with chevron micro pattern</h4>
+                <p id="price9">$1,025.00</p>
+            </div>
+            <div class="col">
+                <a><img style="height: 240px;" src="https://w7.pngwing.com/pngs/349/151/png-transparent-prada-fashion-blazer-suit-dolce-gabbana-prada-men-s-suits-black-formal-wear-gucci.png" onclick="setProductProperties('image10', 'title10', 'price10')" class="image10"></a>
+                <h4 id="title10">Single-breasted jacket in stretch technical double jersey</h4>
+                <p id="price10">$875.00</p>
+            </div>
+            <div class="col">
+                <a><img style="height: 240px;" src="https://w7.pngwing.com/pngs/905/127/png-transparent-blazer-jacket-sleeve-coat-clothing-jacket-zipper-fashion-woman.png" onclick="setProductProperties('image11', 'title11', 'price11')" class="image11"></a>
+                <h4 id="title11">Linen-and-silk blend craquelure jacket with faux toggles</h4>
+                <p id="price11">$780.00</p>
+            </div>
+            <div class="col">
+                <a><img style="height: 240px;" src="https://w7.pngwing.com/pngs/850/411/png-transparent-t-shirt-blazer-designer-armani-ms-temperament-slim-black-shirt-tshirt-white-black-hair.png" onclick="setProductProperties('image12', 'title12', 'price12')" class="image12"></a>
+                <h4 id="title12">Jacket with all-over geometric floral embroidery</h4>
+                <p id="price12">$875.00</p>
+            </div>
+            <div class="col">
+                <a><img src="https://w7.pngwing.com/pngs/407/814/png-transparent-blazer-suit-jacket-lapel-tuxedo-suit-fashion-navy-blue-black.png" onclick="setProductProperties('image13', 'title13', 'price13')" class="image13"></a>
+                <h4 id="title13">Tweed jacket with diagonal closure</h4>
+                <p id="price13">$675.00</p>
+            </div>
+            <div class="col">
+                <a><img style="height: 240px;" src="https://w7.pngwing.com/pngs/478/273/png-transparent-t-shirt-suit-blazer-outerwear-pink-loose-large-size-wool-suit-suit-jacket-clothes-hanger-material-formal-wear.png" onclick="setProductProperties('image14', 'title14', 'price14')" class="image14"></a>
+                <h4 id="title14">Jacquard knit jacket with pleated peplum</h4>
+                <p id="price14">$825.00</p>
+            </div>
+            <div class="col">
+                <a><img style="height: 240px;" src="https://w7.pngwing.com/pngs/104/399/png-transparent-t-shirt-jacket-blazer-coat-suit-blazer-fashion-black-top.png" onclick="setProductProperties('image15', 'title15', 'price15')" class="image15"></a>
+                <h4 id="title15">Cady crêpe single-breasted jacket</h4>
+                <p id="price15">$975.00</p>
+            </div>
+            <div class="col">
+                <a><img style="height: 240px;" src="https://w7.pngwing.com/pngs/178/495/png-transparent-blazer-coat-suit-jacket-blouson-suit-jacket-zipper-fashion-men-suit.png" onclick="setProductProperties('image16', 'title16', 'price16')" class="image16"></a>
+                <h4 id="title16">Faux-galuchat fabric jacket with martingale</h4>
+                <p id="price16">$875.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="productSection">
+        <div class="smallContainer singleProduct" id="mainProduct">
+            <div class="row productRow">
+
+            </div>
+        </div>
+    
+        <div class="smallContainer" id="recommended">
+            <div class="row">
+                <h2 style="padding-top: 20px;">Recommended Products</h2>
+            </div>
+            <div class="row" style="padding-bottom: 20px;">
+                <div class="col" style="cursor: pointer;">
+                    <a><img src="https://w7.pngwing.com/pngs/559/670/png-transparent-suit-jacket-coat-clothing-blazer-jacket-fashion-formal-wear-red.png" onclick="setProductProperties('image1', 'title1', 'price1')" class="image1"></a>
+                    <h4 id="title1">Worsted virgin wool jacket with satin lapels</h4>
+                    <p id="price1">$1095.00</p>
+                </div>
+                <div class="col">
+                    <a><img src="https://w7.pngwing.com/pngs/740/510/png-transparent-blazer-suit-sleeve-formal-wear-sport-coat-blazer-blue-navy-blue-formal-wear.png" onclick="setProductProperties('image2', 'title2', 'price2')" class="image2"></a>
+                    <h4 id="title2">Jacket with guru collar in stretch wool with 3D effect</h4>
+                    <p id="price2">$825.00</p>
+                </div>
+                <div class="col">
+                    <a><img src="https://w7.pngwing.com/pngs/695/293/png-transparent-blazer-clothing-coat-jacket-men-s-jacket-white-men-suit-clothes-hanger.png" onclick="setProductProperties('image3', 'title3', 'price3')" class="image3"></a>
+                    <h4 id="title3">Worsted virgin wool jacket with satin shawl lapels</h4>
+                    <p id="price3">$1095.00</p>
+                </div>
+                <div class="col">
+                    <a><img style="height: 240px;" src="https://w7.pngwing.com/pngs/858/517/png-transparent-blazer-suit-jacket-sport-coat-suit-white-woman-formal-wear.png" onclick="setProductProperties('image4', 'title4', 'price4')" class="image4"></a>
+                    <h4 id="title4">Woven linen gauze jacket with guru collar</h4>
+                    <p id="price4">$775.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="smallContainer cart" id="cart">
+        <div class="cartContent">
+            <div class="products">
+                
+            </div>
+            <div class="cartTotal">
+                <p>
+                    <span>Total Price</span>
+                    <span class="totalPrice">$0</span>
+                </p>
+                <a onclick="productsPageOpen()" class="closeCart" style="cursor: pointer;">Continue Shopping</a>
+                <a class="buy" style="cursor: pointer;" onclick="buyPage()">Proceed to Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="overlay" id="overlay">
+
+        </div>
+        <div class="popupContent">
+            <div class="closePopup" onclick="popupClose()">&times;</div>
+            <form class="form">
+                <label for="address">Address</label><br>
+                <textarea class="textArea" name="textArea" id="" cols="45" rows="3"></textarea>
+                <label for="radio">Card</label>
+                <input type="radio" name="radioField">
+                <label for="radio">Cash</label>
+                <input type="radio" name="radioField">
+                <input type="button" style="float: right;" value="Kaydet" onclick="confirmBuy()">
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footerCol" style="padding-bottom: 18px">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+                <div class="footerCol" style="padding-bottom: 55px;">
+                    <h3>Company</h3>
+                    <ul>
+                        <li>Our Services</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="footerCol">
+                    <h3>Get help</h3>
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Shipping</li>
+                        <li>Returns</li>
+                        <li>Order Status</li>
+                        <li>Payment Options</li>
+                    </ul>
+                </div>
+                <div class="footerCol" style="padding-bottom: 55px;">
+                    <h3>Contact us</h3>
+                    <ul>
+                        <li>0554 4894354</li>
+                        <li>hakankaraotcu@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="allScripts.js"></script>
+</body>
+</html>
